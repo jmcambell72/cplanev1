@@ -1,0 +1,29 @@
+<div class="container panel panel-default">
+  	<div class="panel-heading">System Messages</div>
+  	<div class="panel-body">	
+  	  	<table class="table">
+  			<tr ng-repeat="y in mySys" role="alert"> 
+  			<td> {{ y.Message }} </td>
+  			<td> <br> </td>
+  			<td> {{ y.Status }} </td>
+  		</tr>
+  		</table>	
+	</div>
+</div>
+
+<div class="container panel panel-default">
+  	<div class="panel-heading">Service Now Tickers</div>
+  	<div class="panel-body">
+  		<table class="table">
+  		<tr>
+  			<th> Ticket No. </th>
+  			<th> Ticket Title </th>
+  			<th> Priority </h1>
+  		</tr>
+  		<tr ng-repeat="s in mySnow" role="alert">
+  			<td> <a> {{ s.Ticket }} </a> </td>
+  			<td> {{ s.Title }} </td>
+  			<td> {{ s.Priority }} </td>
+  		</tr>
+  </div>
+</div>

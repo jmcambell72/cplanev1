@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+  
+  <!-- Pull AngularJS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body { padding-top: 70px; }>
+
+<div>
+
+  <p class="navbar-text pull-right">HPE Control Plane</p>
+  <ul class="nav nav-tabs">
+    <li role="presentation"><a href="#/">Home</a></li>
+    <li role="presentation"><a href="#blog">CSA</a></li>
+    <li role="presentation"><a href="#data">Data</a></li>
+    <li role="presentation"><a href="#about">About</a></li>
+    <li role="presentation"><a href="logon.html">Logout</a><li>
+  </ul>
+  <br>
+</div>
+
+</nav>
+
+<div class="container" ng-view></div>
+
+<script src="app.js"></script>
+
+</body>
+
+<footer>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+
+  <div class="container">
+    <span> HPE </span>
+  </div>
+
+</nav>
+
+</html>
