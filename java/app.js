@@ -45,6 +45,14 @@ app.controller('HomeController', function($scope, $http) {
 
 });
 
+app.controller('AboutController', function($scope, $http) {
+  
+  $scope.console.log("About Controller");
+  $http.get("controller.host.com").then(function (response) {
+  
+  
+
+
 // app.controller('BlogController', function($scope) {
   // $scope.message = 'Hello from BlogController';
 // });
